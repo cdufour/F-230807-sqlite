@@ -1,0 +1,4 @@
+*** exos ***
+
+1. créer une base de données blog.db en vous basant
+sur l'image db-blog-schema.png
