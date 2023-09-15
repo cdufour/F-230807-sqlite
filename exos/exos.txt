@@ -1,4 +1,36 @@
 *** exos ***
 
-1. créer une base de données blog.db en vous basant
+1. Créer une base de données blog.db en vous basant
 sur l'image db-blog-schema.png
+
+2. Ecrire un programme en C qui demande à l'utilisateur de saisir son nom de joueur.
+Le programme lui proposera une opération arithmétique aléatoire à résoudre. 
+Par exemple: "combien font 2 + 2 ?".
+Un score sera déterminé en fonction de la réponse.
+
+Le programme interagira avec une base de données sqlite.
+Si le joueur existe déjà en base, son score est mis à jour.
+Si le joueur n'existe pas, il est ajouté avec le score associé à sa première réponse.
+
+Une mauvaise réponse entraîne le retrait d'un point
+Une bonne réponse entraîne l'ajout d'un point.
+Un score peut donc être négatif.
+
+** facultatif **
+Prévoir une option de ligne de commande (-r) permettant
+d'afficher le classement des joueurs par score décroissant.
+L'utilisation de cette option ne déclenche pas le jeu, elle affiche
+uniquement le classement.
+
+* Exemples d'utilisation du programme *
+Saisir un nom de joueur:
+Chris
+Bonjour Chris, quel est le résult de 34 + 21 ?
+55
+Bonne réponse, score: 1
+
+Saisir un nom de joueur:
+Chris
+Bonjour Chris, quel est le résult de 3 + 2 ?
+6
+Mauvaise réponse, score: 0
