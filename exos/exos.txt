@@ -4,11 +4,12 @@
 sur l'image db-blog-schema.png
 
 2. Ecrire un programme en C qui demande à l'utilisateur de saisir son nom de joueur.
-Le programme lui proposera une opération arithmétique aléatoire à résoudre. 
+Le programme lui proposera une addition aléatoire à résoudre. 
 Par exemple: "combien font 2 + 2 ?".
 Un score sera déterminé en fonction de la réponse.
 
 Le programme interagira avec une base de données sqlite.
+Cette base pourra être déjà existante (créée en dehors du programme)?
 Si le joueur existe déjà en base, son score est mis à jour.
 Si le joueur n'existe pas, il est ajouté avec le score associé à sa première réponse.
 
@@ -25,12 +26,12 @@ uniquement le classement.
 * Exemples d'utilisation du programme *
 Saisir un nom de joueur:
 Chris
-Bonjour Chris, quel est le résult de 34 + 21 ?
+Bonjour Chris, quel est le résultat de 34 + 21 ?
 55
 Bonne réponse, score: 1
 
 Saisir un nom de joueur:
 Chris
-Bonjour Chris, quel est le résult de 3 + 2 ?
+Bonjour Chris, quel est le résultat de 3 + 2 ?
 6
 Mauvaise réponse, score: 0
